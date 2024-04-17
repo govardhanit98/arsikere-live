@@ -1,0 +1,816 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+p.founder{
+   font-size: 16px !important;
+   padding: 0px !important;
+   color: #2b4556;
+   font-weight: 700 !important;
+}
+.presidents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:767px){
+    .details{
+        display: block !important;
+    }
+}
+.presidents img{
+    width: 100px;
+    height: 100px;
+}
+/* .header{
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-image: url("https://i.postimg.cc/6pgmMdXD/banner-1.jpg");
+    background-color: linear-gradient(rgba(0,0,0,0.1));
+    height: 600px;
+    filter: brightness(90%);
+} */
+img {
+    width: 100%;
+    height: 610px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+flex: 1;
+text-align: center;
+}
+.nav-links ul{
+    margin-bottom: 0px;
+    padding: 10px 20px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   
+}
+.nav-links ul li a{
+    color: #c1101a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h2{
+    font-size: 62px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid  white;
+    background:#f44336 ;
+    transition: 1s;
+    color: rgb(240, 248, 240);
+
+}
+nav .mark{
+    display: none;
+}
+nav .menu{
+    display: none;
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+}
+.course1{
+    flex-basis: 49%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   transition: 0.7s;
+    
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.links a{
+    text-decoration: none;
+    text-align: center;
+    color: #f44663;
+}
+.links{
+    text-align: center;
+}
+td a{
+    text-decoration: none;
+    color: black;
+  }
+.course1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.12);
+}
+/* campus */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 50px; */
+}
+.campus1{
+    /* flex-basis: 32%; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+.campus1 img{
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 0 20px 0px rgba(0,0,0,0.12);
+     display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+    /* border-radius: 10px; */
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+ .campus1 img :hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/* Facilities */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 100px; */
+}
+.facilities1{
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.facilities img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities p{
+    padding: 0;
+}
+.facilities h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+/* Testimonials */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    /* padding-top: 100px; */
+    text-align: center;
+}
+.testimonials .star{
+    color: #f44336;
+}
+/* to action */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: url('https://i.postimg.cc/SQ19QBS8/contact.jpg');
+    background-color: linear-gradient(rgba(0,0,0,0.1));;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    /* filter: brightness(90%); */
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding:30px 0;
+}
+.footer{
+    width: 100%;
+    padding-top: 30px 0;
+    text-align: center;
+
+}
+.footer h4{
+    margin-bottom:25px ;
+    margin-top: 20px;
+    font-weight: 600;
+}
+ .social{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/* About Us Page */
+.sub-header{
+   height: 70vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://i.postimg.cc/4xNbcBTR/banner4.jpg');
+   background-position: center;
+   background-size: cover;
+   
+   text-align: center;
+   color: #fff;
+}
+.mission{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mission:hover{
+color: #f44336;
+text-decoration: underline;
+
+}
+
+.vision{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.vision:hover{
+    color: #f44336;
+    text-decoration: underline;
+}
+.principle{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.principle:hover{
+    color: #f44336;
+}
+.about{
+    cursor: pointer;
+    transition: 1s;
+}
+.about:hover{
+    color: #f44336;
+}
+.courses{
+    cursor: pointer;
+    transition: 1s;
+}
+.courses:hover{
+    color: #f44336;
+}
+.object{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.object:hover{
+    color: #f44336;
+    text-decoration: underline;
+}
+/* contact-us page */
+
+.location iframe{
+    width: 100%;
+}
+/* .contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+} */
+.contact-col1{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col1 p{
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+ .contact{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+}
+.contact-col input, .contact-col textarea{
+   width: 100%;
+   padding: 15px;
+   margin-bottom: 17px;
+   outline: none;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+.committee{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.committee:hover{
+    color: #f33664;
+    text-decoration: underline;
+}
+.council{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.council:hover{
+    color: #f33664;
+    text-decoration: underline;
+}
+.enroll{
+    cursor: pointer;
+    transition: 1s;
+}
+.enroll:hover{
+    color: #f33664;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: skyblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+img{
+    height: 600px;
+}
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+@media  (max-width:768px){
+    .text-box h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+          position: fixed;
+          background:rgb(240, 248, 240);
+          height: 313px;
+          width: 200px;
+          top: 0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+          transition: 1s;
+          overflow-y:scroll;
+    }
+    nav .mark {
+        display: block;
+        color: lightgreen;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .nav-links ul{
+        padding: 30px;
+
+    }
+    .row{
+        flex-direction: column;
+    }
+    nav .logo{
+        width: 100px;
+    }
+    
+.cta h1{
+    font-size: 24px;
+}
+.cta{
+    filter: brightness(80%);
+}
+
+}
+.file img{
+    width: 20px;
+    height: 20px;
+}
+.file p {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 10px 10px 10px;
+    text-align: justify;
+}
+.file p a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.file{
+    display: flex;
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+.location img{
+    width: 20px;
+    height: 20px;
+}
+.details{
+    padding: 3px 13px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("./Images/bg1.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+}
+.location p{
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+    width: max-content;
+}
+.contact-details{
+display: flex;
+align-items: center;
+}
+.footer1{
+    background-color: #1e1d1c;
+   padding-bottom: 20px;
+    width: 100%;
+}
+.postal-address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.postal-address img{
+    width: 35px;
+    height: 35px;
+}
+.postal-address h3{
+    color: #C2101A;
+    font-size: 25px;
+}
+ h3.about{
+    border-bottom: 2px solid #777;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #ccc;
+    color: #2b4556;
+    text-align: center;
+
+}
+.about-college p{
+    text-align: justify;
+
+    font-size: 16px;
+
+}
+h3.about1{
+    text-shadow: 2px 2px #ccc;
+    color: #2b4556;
+    text-align: center;
+}
+/* scrollable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button (in this case, the "ADMISSION" link) */
+.dropdown a {
+    display: inline-block;
+    text-decoration: none;
+    color: #c1151a; /* Change color as needed */
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 800;
+    
+    font-size: 16px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Change background color as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #c1101a; /* Change color as needed */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Change background color as needed */
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 200px;
+}
+@media (max-width:767px){
+    .eligibility-card{
+        height: unset !important;
+    }
+}
+.eligibility-card{
+    border: 2px solid #eee;
+    width: 100%;
+    background: #f93;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    height: 137px;
+
+}
+.eligibility-card p{
+    color: #fff;
+    padding: 14px 17px;
+}
+.college button a{
+    text-decoration: none;
+    color: #f93;
+
+}
+.college button{
+    border:2px solid  #f93;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 600;
+    text-align: center;
+
+}
+.academics{
+    background-image: url(./Images/banner-1.png);
+  
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+ h3.academics{
+    color: #fff;
+}
+/* Variables */
+:root {
+    --color-white: #ffffff;
+    --color-black: #252a32;
+    --color-light: #f1f5f8;
+    --color-red: #d32f2f;
+    --color-blue: #148cb8;
+  
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  }
+  
+  /* Reset and General Styles */
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Body Styles */
+
+  
+  /* Main Styles */
+  .main .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main .card {
+    color: var(--color-black);
+    border-radius: 2px;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .main .card-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 70%;
+    background: var(--color-white);
+  }
+  
+  .main .card-image img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media Query for Small Screens */
+  @media only screen and (max-width: 600px) {
+    .main .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+  
